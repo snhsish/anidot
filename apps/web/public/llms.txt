@@ -1,0 +1,34 @@
+# AniDot
+
+AniDot is a browser-based tool that converts any image into a flickering,
+animated dot-matrix bitmap. It downsamples photos and logos into a grid of
+lit/unlit dots and exports the result as static or animated graphics.
+
+## What it does
+
+- Dot-matrix conversion: downsample any image into a grid of lit/unlit dots.
+- Style controls: dot shape (circle/square), color, background, dot scale, and
+  real inter-dot spacing.
+- Motion: organic flicker with adjustable rate, FPS, duration, and seed.
+- Edge-only flicker: keep interior dots static and flicker only the boundary.
+- Transparent background option for overlays and compositing.
+- Exports: Static SVG, Animated SVG, GIF, PNG sequence (zip), and WebM.
+
+## How to use
+
+1. Open the web app.
+2. Drop in an image (photo or logo).
+3. Adjust dot shape, color, spacing, and flicker settings.
+4. Export the result as SVG, GIF, PNG frames, or WebM.
+
+## Project
+
+- Web app: Next.js dashboard (client-side, runs entirely in the browser).
+- Core engine: runtime-agnostic grid + flicker animation library.
+- Renderers: Canvas (live preview), SVG (static + SMIL animation), and GIF.
+- CLI: convert images to dot-matrix art from the command line.
+
+## Links
+
+- Home: https://anidot.vercel.app
+- Source: https://github.com/anomalyco/anidot
